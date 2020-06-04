@@ -1,0 +1,87 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Travel Survey Form</h1>
+      <p id="description">Thank you for taking the time to complete our survey</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span>         </label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <p>What type of vacations do you like?</p>
+        <select name="vacation-type" id="dropdown" class="form-control" required>
+          <option disabled selected value>Select Vacation Type</option>
+          <option value="Beach">Beach</option>
+          <option value="Winter Activities">Winter Activities</option>
+          <option value="Group Tours">Group Tours</option>
+          <option value="Cruises">Cruises</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>What season of the year do you vacation?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="vacation-season" value="spring">
+          <label class="form-check-label" for="spring">
+            Spring
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="vacation-season" value="summer">
+          <label class="form-check-label" for="summer">
+            Summer
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="vacation-season" value=fall>
+          <label class="form-check-label" for="fall">
+            Fall
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="vacation-season" value="winter">
+          <label class="form-check-label" for="winter">
+            Winter
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>How many weeks of vacation do you take each year?</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="1">
+          <label class="form-check-label" for="1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="2">
+          <label class="form-check-label" for="2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="More than 2 weeks">
+          <label class="form-check-label" for="More than 2 weeks">More than 2 weeks</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+          <label for="additional comments">Additional Comments</label>
+          <textarea class="form-control" id="additional comments" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+    </div>
+  </form>
+</div>
+</body>
